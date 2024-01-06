@@ -18,7 +18,7 @@ export class MainStack extends cdk.Stack {
 
         // CDKでECRを定義
         const repository = new ecr.Repository(this, 'app-repo', {
-            repositoryName: createRepoName('ecr'),
+            repositoryName: createRepoName('app'),
             removalPolicy: cdk.RemovalPolicy.DESTROY,
             // 同一タグへの上書きを禁止
             imageTagMutability: ecr.TagMutability.IMMUTABLE,
