@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib'
 import 'source-map-support/register'
 import * as consts from '../common/constants'
 import * as utils from '../common/utils'
-import { MainStack } from '../lib/build-stack'
+import { MainStack } from '../lib/main-stack'
 
 const app = new cdk.App()
 // contextからステージ名を取得(デフォルトdev)
